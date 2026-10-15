@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Waste Van</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚛</text></svg>"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="brand">
+        <span class="logo">🚛</span>
+        <div>
+          <h1>Smart Waste Van</h1>
+          <p>Driver dashboard</p>
+        </div>
+      </div>
+      <div class="live">
+        <span id="dot" class="dot"></span><span id="updated">Connecting…</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="banner" class="banner ok">Loading…</section>
+
+      <section class="card route-card" id="routeCard" hidden>
+        <h2>Suggested route</h2>
+        <ol class="route" id="route"></ol>
+        <div class="route-foot">
+          <span id="routeKm"></span>
+        </div>
+      </section>
+
+      <section class="grid" id="bins"></section>
+
+      <section class="card">
+        <div class="row">
+          <h2>Fill-level history</h2>
+          <div class="legend" id="legend"></div>
+        </div>
+        <div id="chart" class="chart"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
