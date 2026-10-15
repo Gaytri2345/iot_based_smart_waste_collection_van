@@ -1,0 +1,6 @@
+flask>=3.0
+supabase>=2.4
+pandas
+numpy
+scikit-learn
+python-dotenv
